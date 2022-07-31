@@ -1,0 +1,82 @@
+html, body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #EEE0CB ;
+  font-family: 'Roboto', sans-serif;
+}
+hr{
+  border-color: #EC5B60;
+}
+.card h1{
+  text-align: center;
+}
+.card{
+  box-shadow: 1px 22px 62px 7px rgba(0,0,0,0.31);
+-webkit-box-shadow: 1px 22px 62px 7px rgba(0,0,0,0.31);
+-moz-box-shadow: 1px 22px 62px 7px rgba(0,0,0,0.31);
+  background-color: #EF767A;
+  border-radius: 16px;
+  max-width: 300px;
+  margin: 16px auto;
+  padding: 16px;
+}
+.card .inputContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.card .inputContainer div{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 100px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card .inputContainer .columna{
+  width: 100px;
+}
+.card .inputContainer label{
+  font-size: 16px;
+  margin-inline: 0px;
+  margin-block: 8px;
+  max-width: 100px;
+  height: 32px;
+  text-transform: capitalize;
+}
+.card .inputContainer input{
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100px;
+  height: 32px;
+}
+.button-div{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+.button-div button {
+  box-shadow: 0px 1px 24px 7px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 1px 24px 7px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 1px 24px 7px rgba(0,0,0,0.1);
+  background-color: #36827F;
+  display: block;
+  width: 100px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 0;
+  margin: 0 auto;
+  transition: 150ms ease;
+}
+.button-div button:hover{
+  border-radius: 12px;
+  background-color: #245655;
+  
+}

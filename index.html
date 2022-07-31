@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculadora de Fermentación</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Calculadora de fermentación</h1>
+    <hr>
+    <div class="inputContainer">
+      <div class="columna">
+        <label>harina (grs)</label>
+        <input id="harina" type="number">
+        <label>% de Hidratación </label>
+        <input id="hidratacion" type="number">
+      </div>
+      <div class="columna">
+        <label>Horas de fermentación</label>
+        <input id="fermentacion" type="number">
+        <label>temperatura C°</label>
+        <input id="temperatura" type="number">
+      </div>
+    </div>
+    <div class="button-div">
+      <button id="iniciarCalculo">Calcular</button>
+      <button id="limpiar">Limpiar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 id="resultado">La levadura necesaria es</h4>
+    <div class="checklist">
+      <input id="checkboxLevadura" type="checkbox">
+      <label>Levadura instantanea</label>
+    </div>
+  </div>
+  <script src="script.js"></script>
+ 
+</body>
+
+</html>
