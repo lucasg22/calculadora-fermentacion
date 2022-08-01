@@ -21,6 +21,7 @@ function iniciarCalcular() {
     let resultado
     resultado = calcular(harina, hidratacion, fermentacion, temperatura)
     let esLevaduraInstantanea = document.getElementById("checkboxLevadura").checked
+    
     if (esLevaduraInstantanea) { resultado = Math.ceil(resultado / 3) }
 
     document.getElementById("resultado").innerHTML = `La levadura necesaria es ${resultado} Grs.`
