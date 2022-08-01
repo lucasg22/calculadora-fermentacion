@@ -2,12 +2,13 @@
 function calcular(harina, hidratacion, fermentacion, temperatura) {
   let resultado = 0
   let multiplicador = 25
-  resultado = (((harina * 23) / fermentacion) / hidratacion) / temperatura
+  resultado = (((harina * multiplicador) / fermentacion) / hidratacion) / temperatura
 
   return Math.ceil(resultado)
 }
 
 function iniciarCalcular() {
+  
   console.log("inicio el calculo")
   let harina = document.getElementById("harina").value
   let hidratacion = document.getElementById("hidratacion").value
@@ -27,5 +28,12 @@ function limpiar() {
   document.getElementById("fermentacion").value = 0
   document.getElementById("temperatura").value = 0
 }
+if(harina!=0 && hidratacion!=0 &&fermentacion!=0 &&temperatura!=0)
+{
 document.getElementById("iniciarCalculo").addEventListener('click', iniciarCalcular)
+
+}
+else {
+  alert ("falta algun dato")
+}
 document.getElementById("limpiar").addEventListener('click', limpiar)
